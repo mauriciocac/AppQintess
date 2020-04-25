@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">AppEntrevista</string>
+    <string name="app_login">Email/CPF</string>
+    <string name="app_pass">Senha</string>
+    <string name="btn_entrar">Logar</string>
 </resources>
