@@ -1,5 +1,6 @@
 package com.mrc.appentrevista.api.config;
 
+import com.mrc.appentrevista.api.service.ServiceCliente;
 import com.mrc.appentrevista.api.service.ServiceLogin;
 
 import retrofit2.Retrofit;
@@ -17,5 +18,9 @@ public class RetrofitConfig {
 
     public ServiceLogin logarConta() {
         return this.instance.create(ServiceLogin.class);
+    }
+
+    public ServiceCliente getClientePorId() {
+        return this.instance.create(ServiceCliente.class);
     }
 }
