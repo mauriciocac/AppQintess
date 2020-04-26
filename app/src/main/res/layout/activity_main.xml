@@ -35,6 +35,7 @@
         tools:layout_editor_absoluteX="-4dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtlogintxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -44,12 +45,13 @@
         android:id="@+id/edtsenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:hint="@string/app_pass"
         app:layout_constraintTop_toBottomOf="@+id/edtlogin"
         tools:layout_editor_absoluteX="0dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtsenhatxt"
             android:layout_width="match_parent"
             android:inputType="textPassword"
             android:layout_height="wrap_content" />
