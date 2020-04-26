@@ -74,9 +74,11 @@
             android:text="Recentes"
             android:textSize="20dp" />
 
-        <ListView
-            android:id="@+id/lista"
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listRecyclerview"
+            android:scrollbars="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
     </LinearLayout>
 </LinearLayout>
