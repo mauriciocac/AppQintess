@@ -1,6 +1,7 @@
 package com.mrc.appentrevista.util;
 
 import android.content.Context;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.text.DateFormat;
@@ -103,4 +104,22 @@ public class StringUtil {
         }
         return false;
     }
+
+    public static boolean validacaoLoginCPF(String valor) {
+        String[] login = new String[valor.length()];
+        for (int i = 0; i < login.length; i++) {
+            login[i] = String.valueOf(valor.charAt(i));
+            if(login[i].contains("@")){
+                Log.i("LOG", "Logando com email");
+                return true; //Logando com email
+            }
+        }
+
+        if(login.length == 11){
+
+        }
+        Log.i("LOG", "Logando com CPF");
+        return false; //Logando com CPF
+    }
+
 }
